@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, Helvetica, sans-serif-;
+    background: rgb(53, 81, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+h1 {
+    text-align: center;
+    background-color: rgb(248, 249, 249);
+    color: rgb(53, 81, 99);
+    margin-bottom: 0;
+    border-radius: 5px;
+    
+}
+
+h2 {
+    text-align: center;
+    background-color: rgb(53, 81, 99);
+    color: whitesmoke;
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+.app {
+    background: whitesmoke;
+    padding: 20px;
+    padding-top: 1px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card-container {
+    perspective: 1000px;
+    margin-bottom: 15px;
+}
+
+.card{
+   /* border: 1px solid #ddd;
+    padding-inline: 20px;
+    margin-bottom: 15px;
+    min-height: 100px;
+    font-size: 18px;*/
+    width: 380px;
+    height: 120px;
+    position: relative;
+    border-radius: 8px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+    margin-left: 20px;
+}
+
+.card-face {
+    position: absolute;
+    width: 380px;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.front {
+    background: white;
+}
+
+.back {
+    background: rgb(53, 81, 99);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+button {
+    margin: 5px;
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: #ddd;
+    background: rgb(53, 81, 99);
+    cursor: 18px;
+}
+
+button:hover{
+    background: #5b89a0;
+
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/home.css">
+    <script src="java/home.js" defer></script>
+
+    <title>Flash card quiz app</title>
+</head>
+<body>
+    
+    <div class="app">
+        <h1>WiMa</h1>
+        <h2>Flashcard Quiz</h2>
+
+        <div class="card-container">
+            <div class="card" id="card" onclick="toggleAnswer()">
+                <div class="card-face front" id="front">What is a computer?</div>
+                <div class="card-face back" id="back">An electronic device the processes data into information.</div>
+            </div>
+        </div>
+
+        <button onclick="toggleAnswer()">Flip Card</button>
+        <br>
+        <button onclick="prevCard()">Previous</button>
+        <button onclick="nextCard()">Next</button>
+
+        <hr>
+        <h3>Add / Edit Card</h3>
+        <input type="text" id="question" placeholder="Enter question">
+        <input type="text" id="answer" placeholder="Enter answer">
+        <br>
+        <button onclick="addCard()">Add</button>
+        <button onclick="editCard()">Edit</button>
+        <button onclick="deleteCard()">Delete</button>
+    </div>
+    
+</body>
+
+</html>
